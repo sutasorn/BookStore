@@ -20,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "syart-server": "node app.js",
+    "start-server": "node app.js",
     "build": "netlify-lambda build ../bookshop"
   },
   "author": "",
