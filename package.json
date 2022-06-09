@@ -2,7 +2,7 @@
   "name": "bookshop",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "functions/app.js",
   "dependencies": {
     "body-parser": "^1.20.0",
     "datatables.net-dt": "^1.12.1",
@@ -21,7 +21,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "syart-server": "node app.js",
-    "build": "netlify-lambda build bookshop/app.js"
+    "build": "netlify-lambda build ../bookshop"
   },
   "author": "",
   "license": "ISC"
