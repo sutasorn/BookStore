@@ -22,6 +22,5 @@ app.use(indexRouters);
 app.use(cartRouters);
 
 app.use(errorControler.error404);
-app.use('/.netlify/functions',router);  // path must route to lambda (app.js)
-app.listen(3000)
+app.use('./netlify/functions',router);  // path must route to lambda (app.js)
 module.exports.handler = serverless(app);
