@@ -21,7 +21,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "syart-server": "node app.js",
-    "build": "netlify-lambda build ../bookshop"
+    "build": "netlify-lambda build bookshop"
   },
   "author": "",
   "license": "ISC"
