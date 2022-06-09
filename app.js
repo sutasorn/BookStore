@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express');
-
+const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
 
 const errorControler = require('./controllers/error');
@@ -24,3 +24,4 @@ app.use(cartRouters);
 app.use(errorControler.error404);
 app.listen(3000);
 
+module.exports.handler = serverless(app)
