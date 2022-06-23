@@ -16,7 +16,6 @@ module.exports = class Cart {
       prod => prod.id == id
     );
     const existingProduct = cart.products[existingProductIndex];
-    console.log(existingProduct,"existingProduct")
     let updatedProduct;
     // Add new product/ increase quantity
     if (existingProduct) {
