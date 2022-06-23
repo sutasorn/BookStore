@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "netlify-lambda serve src",
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "start-server": "node app.js",
     "build": "netlify-lambda build src"
   },
