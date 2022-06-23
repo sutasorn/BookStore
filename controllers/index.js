@@ -2,13 +2,13 @@ const Books = require('../models/books')
 const Cart = require('../models/cart')
 exports.getIndex =  (req, res, next) => { 
     try {
-        const books =  Books.fetcgAll()
-        const amountCart = Cart.getAmountCart()
-        res.render('index',{
+       const books =  Books.fetcgAll()
+       const amountCart = Cart.getAmountCart()
+         res.render('index',{
             books: books,
-            path:'/',
-            amountCart:amountCart
-        });
+             path:'/',
+             amountCart:amountCart
+         });
     } catch (err) {
           res.status(404).render("404",{title:'Page Not Found',path:'/404'});
     }

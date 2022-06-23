@@ -9,7 +9,9 @@ const p =path.join(
     'books.json')
 
 const getProductFormFile = () => {
+    console.log("xxxxxxxxxxxx")
     const jsonString = fs.readFileSync(p)
+    console.log("xxxxxxxxxxxx2")
     const books = JSON.parse(jsonString)
     return books
 }

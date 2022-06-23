@@ -18,11 +18,10 @@
     "nodemon": "^2.0.16"
   },
   "scripts": {
-    "test": "./node_modules/.bin/netlify-lambda serve app.js",
+    "test": "netlify-lambda serve src",
     "start": "nodemon app.js",
     "start-server": "node app.js",
-    "build": "netlify-lambda build ../bookshop"
+    "build": "netlify-lambda build src"
   },
-  "author": "",
   "license": "ISC"
 }
